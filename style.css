@@ -165,6 +165,13 @@ section {
     box-shadow: 0 0 25px var(--main-color);
 }
 
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -252,5 +259,55 @@ section {
 }
 
 .btn2:hover {
-    box-shadow: 0 0 1.6rem var(--bg-color)
+    box-shadow: 0 0 1.6rem var(--bg-color);
+}
+
+/* Serices Section Code */
+
+.services h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    color: var(--snd-bg-color);
+}
+
+.services .multiple-text {
+    color: var(--main-color);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--main-color);
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.3rem solid var(--main-color);
+    transition: 0.3s ease;
+}
+
+.services-container .services-box:hover {
+    border-color: var(--trd-bg-color);
+    transform: scale(1.02);
+    box-shadow: 0 0 1.6rem var(--main-color);
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: var(--trd-bg-color);
+}
+
+.services-box h3 {
+    font-size: 1.6rem;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
 }
