@@ -12,12 +12,13 @@
 :root {
     --bg-color: #000;
     --snd-bg-color: #fff;
+    --trd-bg-color: #1D0200;
     --text-color: #000;
     --main-color: #98302e;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 55.0%;
     overflow-x: hidden;
 }
 
@@ -28,7 +29,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 10rem 20% 2rem;
 }
 
 /* Header Section Code */
@@ -88,7 +89,7 @@ section {
 }
 
 .home-img img {
-    width: 25vw;
+    width: 15vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -127,8 +128,8 @@ section {
     margin-bottom: 2rem;
 }
 
-span {
-    color: var(--main-color)
+.home .multiple-text {
+    color: var(--main-color);
 }
 
 .home-content h1 {
@@ -139,6 +140,7 @@ span {
 
 .home-content p {
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .social-media a {
@@ -178,4 +180,77 @@ span {
 
 .btn:hover {
     box-shadow: 0 0 1.6rem var(--main-color)
+}
+
+/* About Section Code */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--main-color);
+}
+
+.about-img img {
+    width: 15vw;
+    border: 2px solid var(--trd-bg-color);
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--trd-bg-color);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.about-img img:hover {
+    box-shadow: 0 0 25px var(--trd-bg-color),
+                0 0 35px var(--trd-bg-color),
+                0 0 45px var(--trd-bg-color);
+}
+
+.heading {
+    font-size: 6rem;
+    text-align: left;
+    color: #000;
+}
+
+.about-content {
+    padding: 0 4rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 3rem;
+    color: #000;
+}
+
+.about .multiple-text {
+    color: var(--snd-bg-color);
+}
+
+.about-content p {
+    font-size: 1.8rem;
+    margin: 2rem 0 3rem;
+    color: #000;
+    text-align: justify;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--bg-color);
+    border-radius: 4rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn2:hover {
+    box-shadow: 0 0 1.6rem var(--bg-color)
 }
