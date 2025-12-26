@@ -1,7 +1,19 @@
 // Menu
 
+const menu = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navbar a");
+
+menu.onclick = () => {
+    menu.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
+}
+
+window.onscroll = () => {
+    menu.classList.remove("bx-x");
+    navbar.classList.remove("active");
+}
 
 window.addEventListener("scroll", () => {
     let current = "";
@@ -23,6 +35,13 @@ window.addEventListener("scroll", () => {
     });
 });
 
+const typed = new Typed('.multiple-text', {
+    strings: ["Desenvolvedora Fronted", "Web Designer", "Desenvolvedora Backend"],
+    typeSpeed: 80,
+    baackSpeed: 80,
+    backDelay: 1200,
+    loop: true,
+});
 
 // Animação Cubo 3D (Three.JS)
 
